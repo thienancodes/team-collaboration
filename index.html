@@ -7,10 +7,8 @@
 <title>Navbar</title>
 </head>
 
-<body>
-
 <header class="bar">
-  <div class="container">
+  <div class>
 
       <a href="#"><img src="images/logos/logo.png" alt="logo" class ="logo" width="150" height="50"/></a>
 
@@ -19,13 +17,69 @@
           <li class="underline_animation"><a href="#">Home</a></li>
           <li class="underline_animation"><a href="#">Menu</a></li>
           <li class="underline_animation"><a href="#">About Us</a></li>
-          <li><a href="#"><img src ="images/topNavBar/logIn_icon.png" alt="logo" width="25" height="25"/></a></li>
         </ul>
       </nav>
 
   </div>
 </header>
 
-</body>
+<!--image slider start-->
+<body class ="featurebar">
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class ="slide first">
+          <img src="images/slider/1.jpg" alt="firstSlide">
+        </div>
+        <div class ="slide">
+          <img src="images/slider/2.jpg" alt="secondSlide">
+        </div>
+        <div class ="slide">
+          <img src="images/slider/3.jpg" alt="thirdSlide">
+        </div>
+        <div class ="slide">
+          <img src="images/slider/4.jpg" alt="fourthSlide">
+        </div>
+        <!--slide images end-->
+        <!--automatic naviagation start-->
+        <div class ="autoNavigation">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation ends-->
+      </div>
+      <!--manual naviagation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual naviagation ends-->
+    </div>
+  <!--slide images end-->
 
-</html>
+
+  </header>
+  
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+  </body>
+  </html>
+  
