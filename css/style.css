@@ -31,6 +31,18 @@
   body{
     background: var(--body-bg-color);
   }
+
+section{
+  position: relative;
+}
+
+.section{
+  color: var(--white-color);
+  background: var(--section-bg-color);
+  padding: 30px 200px;
+  transition: 0.3s ease;
+}
+
 /*======= Header =======*/
 header{
   z-index: 999;
@@ -239,7 +251,12 @@ header .nav-bar{
 /*======= Media icons =======*/
 
 /*======= About section =======*/
-
+.aboutMe-image{
+  position: absolute;
+  right: 150px;  
+  width: 300px;
+  height: 300px;
+}
 /*======= Media queries (max-width: 1100px) =======*/
 @media screen and (max-wdith: 1100px){
 
