@@ -12,6 +12,14 @@ var swiper = new Swiper(".bg-slider-thumbs", {
       swiper: swiper,
     },
   });
+  var swiper3 = new Swiper(".autoplay", {
+    loop: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+  })
 //Navigation bar effects on scroll
 
 //Responsive navigation menu toggle
