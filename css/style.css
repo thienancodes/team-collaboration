@@ -79,6 +79,10 @@ header .nav-bar{
   display: none;
 }
 
+.navigation .nav-items img {
+  vertical-align:middle;
+}
+
 .navigation .nav-items a:not(:last-child){
   margin-right: 45px;
 }
